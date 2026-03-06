@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-HK" class="scroll-smooth scroll-pt-24">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>劉志明中醫推拿診所 | 旺角專業中醫・告別痛症</title>
     <meta name="description" content="位於旺角彌敦道，劉志明中醫推拿診所提供專業中醫推拿、針灸、正骨復位服務。每日限診，確保頂級診療品質。立即預約。">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -54,7 +57,7 @@
             }
         }
     </script>
-    
+
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
@@ -63,61 +66,85 @@
         .glass-nav {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
-        
+
         /* 藍金風水漸層 */
         .hero-overlay {
-            background: linear-gradient(90deg, rgba(10,25,47,0.95) 0%, rgba(30,64,175,0.7) 50%, rgba(30,64,175,0.2) 100%);
+            background: linear-gradient(90deg, rgba(10, 25, 47, 0.95) 0%, rgba(30, 64, 175, 0.7) 50%, rgba(30, 64, 175, 0.2) 100%);
         }
+
         @media (max-width: 768px) {
             .hero-overlay {
-                background: linear-gradient(180deg, rgba(10,25,47,0.85) 0%, rgba(10,25,47,0.98) 100%);
+                background: linear-gradient(180deg, rgba(10, 25, 47, 0.85) 0%, rgba(10, 25, 47, 0.98) 100%);
             }
         }
+
         .text-shadow {
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         }
-        
+
         /* SVG Animation Specifics */
         .path-animated {
             stroke-dasharray: 1000;
             stroke-dashoffset: 1000;
             animation: dash 3s linear forwards;
         }
+
         @keyframes dash {
-            to { stroke-dashoffset: 0; }
+            to {
+                stroke-dashoffset: 0;
+            }
         }
 
         /* 活水波浪動畫 */
-        .wave-anim-1 { animation: wave 12s linear infinite; }
-        .wave-anim-2 { animation: wave 16s linear infinite reverse; }
-        .wave-anim-3 { animation: wave 20s linear infinite; }
-        .wave-anim-4 { animation: wave 24s linear infinite reverse; }
+        .wave-anim-1 {
+            animation: wave 12s linear infinite;
+        }
+
+        .wave-anim-2 {
+            animation: wave 16s linear infinite reverse;
+        }
+
+        .wave-anim-3 {
+            animation: wave 20s linear infinite;
+        }
+
+        .wave-anim-4 {
+            animation: wave 24s linear infinite reverse;
+        }
 
         @keyframes wave {
-            0% { transform: translate3d(-90px, 0, 0); }
-            100% { transform: translate3d(85px, 0, 0); }
+            0% {
+                transform: translate3d(-90px, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(85px, 0, 0);
+            }
         }
 
         /* 黃金呼吸燈按鈕特效 */
         .gold-breath-btn {
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
             animation: goldBreath 2s infinite alternate;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
+
         @keyframes goldBreath {
-            0% { 
-                box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); 
-                transform: scale(1); 
+            0% {
+                box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+                transform: scale(1);
             }
-            100% { 
-                box-shadow: 0 0 35px rgba(212, 175, 55, 0.9), 0 0 10px rgba(255, 255, 255, 0.5) inset; 
-                transform: scale(1.03); 
+
+            100% {
+                box-shadow: 0 0 35px rgba(212, 175, 55, 0.9), 0 0 10px rgba(255, 255, 255, 0.5) inset;
+                transform: scale(1.03);
             }
         }
     </style>
 </head>
+
 <body class="font-sans text-gray-800 antialiased bg-stone-50 overflow-x-hidden">
 
     <!-- Navigation -->
@@ -128,10 +155,12 @@
                 <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
                     <!-- SVG Logo Animated -->
                     <svg width="40" height="40" viewBox="0 0 100 100" class="text-tcm-primary animate-pulse-slow">
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="4"/>
-                        <path class="path-animated" d="M30 50 Q50 20 70 50 T30 50" fill="none" stroke="currentColor" stroke-width="3"/>
-                        <path class="path-animated" d="M50 20 L50 80" fill="none" stroke="currentColor" stroke-width="3" style="animation-delay: 0.5s;"/>
-                        <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="4" />
+                        <path class="path-animated" d="M30 50 Q50 20 70 50 T30 50" fill="none" stroke="currentColor"
+                            stroke-width="3" />
+                        <path class="path-animated" d="M50 20 L50 80" fill="none" stroke="currentColor" stroke-width="3"
+                            style="animation-delay: 0.5s;" />
+                        <circle cx="50" cy="50" r="8" fill="currentColor" />
                     </svg>
                     <div>
                         <h1 class="font-serif text-xl md:text-2xl font-bold text-tcm-dark tracking-wider">劉志明中醫推拿診所</h1>
@@ -145,7 +174,8 @@
                     <a href="#about" class="text-gray-600 hover:text-tcm-primary font-medium transition">醫師簡介</a>
                     <a href="#testimonials" class="text-gray-600 hover:text-tcm-primary font-medium transition">真實評價</a>
                     <a href="#contact" class="text-gray-600 hover:text-tcm-primary font-medium transition">聯絡我們</a>
-                    <a href="https://wa.me/85296680071" target="_blank" class="bg-gradient-to-r from-tcm-gold to-[#e0b04e] hover:brightness-110 text-white px-6 py-2.5 rounded-full font-bold shadow-lg transform hover:scale-105 transition flex items-center gap-2">
+                    <a href="https://wa.me/85296680071" target="_blank"
+                        class="bg-gradient-to-r from-tcm-gold to-[#e0b04e] hover:brightness-110 text-white px-6 py-2.5 rounded-full font-bold shadow-lg transform hover:scale-105 transition flex items-center gap-2">
                         <i class="ph-fill ph-whatsapp-logo text-xl"></i>
                         立即預約
                     </a>
@@ -163,10 +193,14 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
             <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="#services" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-tcm-primary hover:bg-gray-50 rounded-md">專業服務</a>
-                <a href="#about" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-tcm-primary hover:bg-gray-50 rounded-md">醫師簡介</a>
-                <a href="#contact" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-tcm-primary hover:bg-gray-50 rounded-md">聯絡我們</a>
-                <a href="https://wa.me/85296680071" target="_blank" class="mt-4 w-full text-center bg-tcm-primary text-white px-6 py-3 rounded-md font-bold shadow-md flex justify-center items-center gap-2">
+                <a href="#services"
+                    class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-tcm-primary hover:bg-gray-50 rounded-md">專業服務</a>
+                <a href="#about"
+                    class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-tcm-primary hover:bg-gray-50 rounded-md">醫師簡介</a>
+                <a href="#contact"
+                    class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-tcm-primary hover:bg-gray-50 rounded-md">聯絡我們</a>
+                <a href="https://wa.me/85296680071" target="_blank"
+                    class="mt-4 w-full text-center bg-tcm-primary text-white px-6 py-3 rounded-md font-bold shadow-md flex justify-center items-center gap-2">
                     <i class="ph-fill ph-whatsapp-logo text-xl"></i>
                     WhatsApp 預約
                 </a>
@@ -178,17 +212,21 @@
     <section class="relative h-screen min-h-[700px] flex items-center pt-20 overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="pic/photo1.png" alt="專業針灸特寫" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1604605801370-3481ed27814b?q=80&w=2000'" />
+            <img src="pic/photo1.png" alt="專業針灸特寫" class="w-full h-full object-cover object-center"
+                onerror="this.src='https://images.unsplash.com/photo-1604605801370-3481ed27814b?q=80&w=2000'" />
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
 
         <!-- Content -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center pb-12">
+        <div
+            class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center pb-12">
             <div class="w-full md:w-3/5 text-white">
                 <!-- SVG Decorative Element -->
                 <svg width="60" height="60" viewBox="0 0 100 100" class="mb-4 text-tcm-gold animate-float">
-                    <path class="path-animated" d="M10 50 Q 30 20 50 50 T 90 50" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-                    <path class="path-animated" d="M10 65 Q 30 35 50 65 T 90 65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5" style="animation-delay: 0.3s;"/>
+                    <path class="path-animated" d="M10 50 Q 30 20 50 50 T 90 50" fill="none" stroke="currentColor"
+                        stroke-width="4" stroke-linecap="round" />
+                    <path class="path-animated" d="M10 65 Q 30 35 50 65 T 90 65" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" opacity="0.5" style="animation-delay: 0.3s;" />
                 </svg>
 
                 <h2 class="text-lg md:text-xl font-medium mb-3 text-tcm-gold tracking-widest">註冊中醫主理・深層氣血疏通</h2>
@@ -201,9 +239,12 @@
                 </p>
 
                 <!-- 飢餓行銷區塊 (Scarcity Marketing) -->
-                <div class="mb-8 inline-flex items-center gap-4 bg-white/10 backdrop-blur-md border border-tcm-gold/40 rounded-2xl p-4 shadow-[0_0_25px_rgba(212,175,55,0.15)] relative overflow-hidden group">
+                <div
+                    class="mb-8 inline-flex items-center gap-4 bg-white/10 backdrop-blur-md border border-tcm-gold/40 rounded-2xl p-4 shadow-[0_0_25px_rgba(212,175,55,0.15)] relative overflow-hidden group">
                     <!-- 發光掃描特效 -->
-                    <div class="absolute inset-0 -translate-x-full w-[50%] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-[20deg] animate-shimmer"></div>
+                    <div
+                        class="absolute inset-0 -translate-x-full w-[50%] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-[20deg] animate-shimmer">
+                    </div>
                     <div class="bg-gradient-to-br from-tcm-gold to-[#f0d475] p-2.5 rounded-full relative z-10">
                         <i class="ph-fill ph-crown text-2xl text-tcm-dark animate-pulse"></i>
                     </div>
@@ -212,15 +253,18 @@
                         <p class="text-xs text-gray-200">保障醫師專注力與頂級診療質素，敬請提早預約</p>
                     </div>
                 </div>
-                
+
                 <div class="flex flex-col sm:flex-row gap-5">
                     <!-- 黃金呼吸燈 CTA -->
-                    <a href="https://wa.me/85296680071" class="gold-breath-btn relative bg-gradient-to-r from-tcm-gold to-[#e5c05c] text-tcm-dark text-center px-8 py-4 rounded-full font-black text-lg flex items-center justify-center gap-2 overflow-hidden group/btn">
-                        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></span>
+                    <a href="https://wa.me/85296680071"
+                        class="gold-breath-btn relative bg-gradient-to-r from-tcm-gold to-[#e5c05c] text-tcm-dark text-center px-8 py-4 rounded-full font-black text-lg flex items-center justify-center gap-2 overflow-hidden group/btn">
+                        <span
+                            class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></span>
                         <i class="ph-fill ph-whatsapp-logo text-2xl relative z-10"></i>
                         <span class="relative z-10">立即搶先預約</span>
                     </a>
-                    <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white text-center px-8 py-4 rounded-full font-medium text-lg transition-all duration-300">
+                    <a href="#services"
+                        class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white text-center px-8 py-4 rounded-full font-medium text-lg transition-all duration-300">
                         了解治療方案
                     </a>
                 </div>
@@ -228,7 +272,9 @@
         </div>
 
         <!-- 活水波紋動畫 (Water Wave Animation) -->
-        <svg class="absolute bottom-0 left-0 w-full h-[12vh] max-h-[120px] min-h-[60px] z-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <svg class="absolute bottom-0 left-0 w-full h-[12vh] max-h-[120px] min-h-[60px] z-20 pointer-events-none"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+            preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
@@ -249,43 +295,56 @@
                 <h2 class="font-serif text-3xl md:text-4xl font-bold text-tcm-dark mb-4">都市人常見痛症，您中了幾多項？</h2>
                 <div class="w-24 h-1 bg-tcm-gold mx-auto rounded-full"></div>
             </div>
-            
+
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <!-- Pain Card 1 -->
-                <div class="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100 group">
-                    <div class="w-16 h-16 mx-auto bg-tcm-light rounded-full flex items-center justify-center mb-4 group-hover:bg-tcm-primary transition-colors duration-300">
-                        <i class="ph-fill ph-person-simple-walk text-3xl text-tcm-primary group-hover:text-white transition-colors"></i>
+                <div
+                    class="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-tcm-light rounded-full flex items-center justify-center mb-4 group-hover:bg-tcm-primary transition-colors duration-300">
+                        <i
+                            class="ph-fill ph-person-simple-walk text-3xl text-tcm-primary group-hover:text-white transition-colors"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2 text-gray-800">肩頸僵硬</h3>
                     <p class="text-sm text-gray-500">長期對電腦手機，肩頸肌肉勞損劇痛</p>
                 </div>
                 <!-- Pain Card 2 -->
-                <div class="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100 group">
-                    <div class="w-16 h-16 mx-auto bg-tcm-light rounded-full flex items-center justify-center mb-4 group-hover:bg-tcm-primary transition-colors duration-300">
-                        <i class="ph-fill ph-wheelchair text-3xl text-tcm-primary group-hover:text-white transition-colors"></i>
+                <div
+                    class="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-tcm-light rounded-full flex items-center justify-center mb-4 group-hover:bg-tcm-primary transition-colors duration-300">
+                        <i
+                            class="ph-fill ph-wheelchair text-3xl text-tcm-primary group-hover:text-white transition-colors"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2 text-gray-800">腰背刺痛</h3>
                     <p class="text-sm text-gray-500">坐姿不良導致腰椎錯位、坐骨神經痛</p>
                 </div>
                 <!-- Pain Card 3 -->
-                <div class="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100 group">
-                    <div class="w-16 h-16 mx-auto bg-tcm-light rounded-full flex items-center justify-center mb-4 group-hover:bg-tcm-primary transition-colors duration-300">
-                        <i class="ph-fill ph-hand-palm text-3xl text-tcm-primary group-hover:text-white transition-colors"></i>
+                <div
+                    class="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-tcm-light rounded-full flex items-center justify-center mb-4 group-hover:bg-tcm-primary transition-colors duration-300">
+                        <i
+                            class="ph-fill ph-hand-palm text-3xl text-tcm-primary group-hover:text-white transition-colors"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2 text-gray-800">關節勞損</h3>
                     <p class="text-sm text-gray-500">網球肘、媽媽手、膝蓋無力退化</p>
                 </div>
                 <!-- Pain Card 4 -->
-                <div class="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100 group">
-                    <div class="w-16 h-16 mx-auto bg-tcm-light rounded-full flex items-center justify-center mb-4 group-hover:bg-tcm-primary transition-colors duration-300">
-                        <i class="ph-fill ph-bed text-3xl text-tcm-primary group-hover:text-white transition-colors"></i>
+                <div
+                    class="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-tcm-light rounded-full flex items-center justify-center mb-4 group-hover:bg-tcm-primary transition-colors duration-300">
+                        <i
+                            class="ph-fill ph-bed text-3xl text-tcm-primary group-hover:text-white transition-colors"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2 text-gray-800">失眠頭痛</h3>
                     <p class="text-sm text-gray-500">氣血不通引發偏頭痛、睡眠質素差</p>
                 </div>
             </div>
 
-            <div class="mt-12 text-center bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgba(30,64,175,0.08)] border border-tcm-primary/10 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+            <div
+                class="mt-12 text-center bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgba(30,64,175,0.08)] border border-tcm-primary/10 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
                 <div class="absolute -right-10 -top-10 text-tcm-light opacity-30">
                     <i class="ph-fill ph-pulse text-9xl"></i>
                 </div>
@@ -293,7 +352,8 @@
                     <h3 class="font-serif text-2xl font-bold text-tcm-dark mb-2">不能再拖！痛症會隨時間惡化</h3>
                     <p class="text-gray-600">現在預約首次診症，由專業醫師為您進行全面體格檢查及對症治療。</p>
                 </div>
-                <a href="https://wa.me/85296680071" class="bg-tcm-primary hover:bg-tcm-dark text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transform hover:-translate-y-1 transition flex items-center gap-2 whitespace-nowrap relative z-10">
+                <a href="https://wa.me/85296680071"
+                    class="bg-tcm-primary hover:bg-tcm-dark text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transform hover:-translate-y-1 transition flex items-center gap-2 whitespace-nowrap relative z-10">
                     領取首次診症優惠 <i class="ph-bold ph-arrow-right"></i>
                 </a>
             </div>
@@ -311,13 +371,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-gray-100">
+                <div
+                    class="bg-stone-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-gray-100">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="pic/photo3.png" alt="中醫推拿理療" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800'">
-                        <div class="absolute inset-0 bg-tcm-dark/20 group-hover:bg-transparent transition-colors duration-300"></div>
+                        <img src="pic/photo3.png" alt="中醫推拿理療"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            onerror="this.src='https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800'">
+                        <div
+                            class="absolute inset-0 bg-tcm-dark/20 group-hover:bg-transparent transition-colors duration-300">
+                        </div>
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-full p-2 shadow-md">
                             <!-- SVG Icon -->
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e40af"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="M12 8v4l3 3"></path>
                             </svg>
@@ -327,20 +393,29 @@
                         <h3 class="font-serif text-2xl font-bold text-tcm-dark mb-3">中醫推拿 / 正骨</h3>
                         <p class="text-gray-600 mb-6 line-clamp-3">精準點穴，深層放鬆繃緊肌肉。配合獨家正骨手法，將錯位的脊椎及關節復位，即時舒緩壓迫神經帶來的痛楚。</p>
                         <ul class="space-y-2 mb-6 text-sm text-gray-500 font-medium">
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 舒緩深層肌肉勞損</li>
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 矯正寒背、骨盆前傾</li>
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 改善關節活動幅度</li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 舒緩深層肌肉勞損
+                            </li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 矯正寒背、骨盆前傾
+                            </li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 改善關節活動幅度
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-gray-100">
+                <div
+                    class="bg-stone-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-gray-100">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="pic/photo2.png" alt="傳統拔罐與針灸" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=800'">
-                        <div class="absolute inset-0 bg-tcm-dark/20 group-hover:bg-transparent transition-colors duration-300"></div>
+                        <img src="pic/photo2.png" alt="傳統拔罐與針灸"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            onerror="this.src='https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=800'">
+                        <div
+                            class="absolute inset-0 bg-tcm-dark/20 group-hover:bg-transparent transition-colors duration-300">
+                        </div>
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-full p-2 shadow-md">
-                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e40af"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 2v20"></path>
                                 <path d="M8 6h8"></path>
                                 <path d="M8 18h8"></path>
@@ -349,22 +424,32 @@
                     </div>
                     <div class="p-8">
                         <h3 class="font-serif text-2xl font-bold text-tcm-dark mb-3">針灸 / 拔罐治療</h3>
-                        <p class="text-gray-600 mb-6 line-clamp-3">透過刺激特定穴位，疏通經絡氣血，達到「通則不痛」的效果。配合拔罐驅除體內濕氣寒毒，消炎止痛效果顯著。</p>
+                        <p class="text-gray-600 mb-6 line-clamp-3">透過刺激特定穴位，疏通經絡氣血，達到「通則不痛」的效果。配合拔罐驅除體內濕氣寒毒，消炎止痛效果顯著。
+                        </p>
                         <ul class="space-y-2 mb-6 text-sm text-gray-500 font-medium">
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 速效消炎止痛</li>
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 促進局部血液循環</li>
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 改善偏頭痛、面癱神經痛</li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 速效消炎止痛
+                            </li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 促進局部血液循環
+                            </li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i>
+                                改善偏頭痛、面癱神經痛</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-gray-100">
+                <div
+                    class="bg-stone-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-gray-100">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="pic/photo4.png" alt="中醫藥材調理" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?q=80&w=800'">
-                        <div class="absolute inset-0 bg-tcm-dark/20 group-hover:bg-transparent transition-colors duration-300"></div>
+                        <img src="pic/photo4.png" alt="中醫藥材調理"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            onerror="this.src='https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?q=80&w=800'">
+                        <div
+                            class="absolute inset-0 bg-tcm-dark/20 group-hover:bg-transparent transition-colors duration-300">
+                        </div>
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-full p-2 shadow-md">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e40af"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 14h4v7H3z"></path>
                                 <path d="M3 7h4v4H3z"></path>
                                 <path d="M17 14h4v7h-4z"></path>
@@ -376,11 +461,15 @@
                     </div>
                     <div class="p-8">
                         <h3 class="font-serif text-2xl font-bold text-tcm-dark mb-3">中醫內科 / 體質調理</h3>
-                        <p class="text-gray-600 mb-6 line-clamp-3">把脈問診，辨證論治。針對個人體質處方濃縮中藥粉，調理內在臟腑功能，解決失眠、腸胃不適、婦科及亞健康問題。</p>
+                        <p class="text-gray-600 mb-6 line-clamp-3">把脈問診，辨證論治。針對個人體質處方濃縮中藥粉，調理內在臟腑功能，解決失眠、腸胃不適、婦科及亞健康問題。
+                        </p>
                         <ul class="space-y-2 mb-6 text-sm text-gray-500 font-medium">
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 方便沖飲濃縮中藥粉</li>
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 改善手腳冰冷、易倦</li>
-                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 針對長新冠後遺症調理</li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 方便沖飲濃縮中藥粉
+                            </li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i> 改善手腳冰冷、易倦
+                            </li>
+                            <li class="flex items-center gap-2"><i class="ph-bold ph-check text-tcm-gold"></i>
+                                針對長新冠後遺症調理</li>
                         </ul>
                     </div>
                 </div>
@@ -396,12 +485,14 @@
                 <div class="w-full lg:w-1/2 relative">
                     <!-- Decorative background block -->
                     <div class="absolute -top-4 -left-4 w-full h-full bg-tcm-light rounded-2xl z-0"></div>
-                    
+
                     <!-- Here is the AI generated Doctor's Portrait -->
-                    <img src="http://googleusercontent.com/image_generation_content/0" alt="劉志明註冊中醫師" class="relative z-10 rounded-2xl shadow-xl w-full object-cover h-[500px] object-top">
-                    
+                    <img src="pic/doctor_portrait.png" alt="劉志明註冊中醫師"
+                        class="relative z-10 rounded-2xl shadow-xl w-full object-cover h-[500px] object-top">
+
                     <!-- Floating Badge -->
-                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-2xl z-20 flex items-center gap-4">
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-2xl z-20 flex items-center gap-4">
                         <div class="bg-tcm-light p-3 rounded-full">
                             <i class="ph-fill ph-certificate text-4xl text-tcm-primary"></i>
                         </div>
@@ -414,7 +505,8 @@
 
                 <div class="w-full lg:w-1/2">
                     <h4 class="text-tcm-gold font-bold tracking-widest mb-2">關於劉志明醫師</h4>
-                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-tcm-dark mb-6 leading-tight">三十多年經驗<br>傳承中醫正統療法</h2>
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-tcm-dark mb-6 leading-tight">
+                        三十多年經驗<br>傳承中醫正統療法</h2>
                     <p class="text-gray-600 text-lg mb-6 leading-relaxed">
                         劉志明中醫師擁有超過三十年的豐富臨床經驗。診所扎根香港旺角，我們深明都市人生活節奏急促，面對各種勞損與痛症往往求醫無門或反覆發作。
                     </p>
@@ -441,7 +533,8 @@
                         </div>
                     </div>
 
-                    <a href="https://www.facebook.com/LCMCMC/" target="_blank" class="inline-flex items-center gap-2 text-tcm-primary font-bold hover:text-tcm-dark transition">
+                    <a href="https://www.facebook.com/LCMCMC/" target="_blank"
+                        class="inline-flex items-center gap-2 text-tcm-primary font-bold hover:text-tcm-dark transition">
                         <span>瀏覽我們的 Facebook 專頁了解更多</span>
                         <i class="ph-bold ph-arrow-right"></i>
                     </a>
@@ -455,9 +548,9 @@
         <!-- SVG Background Pattern -->
         <svg class="absolute inset-0 w-full h-full opacity-5" viewBox="0 0 100 100" preserveAspectRatio="none">
             <pattern id="pattern" width="10" height="10" patternUnits="userSpaceOnUse">
-                <circle cx="2" cy="2" r="1" fill="currentColor"/>
+                <circle cx="2" cy="2" r="1" fill="currentColor" />
             </pattern>
-            <rect width="100%" height="100%" fill="url(#pattern)"/>
+            <rect width="100%" height="100%" fill="url(#pattern)" />
         </svg>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -469,15 +562,20 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Review 1 -->
-                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 relative shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+                <div
+                    class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 relative shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
                     <i class="ph-fill ph-quotes text-5xl text-tcm-gold/30 absolute top-4 left-4"></i>
                     <div class="flex text-tcm-gold mb-4 relative z-10">
-                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
                     <h4 class="font-bold text-lg mb-2 relative z-10 text-white">「多年的五十肩終於舉得起手！」</h4>
-                    <p class="text-gray-300 mb-6 relative z-10">原本右手痛到著衫都困難，睇過西醫食止痛藥治標不治本。經朋友介紹嚟搵劉醫師推拿加針灸，做咗3次已經有好大改善，依家完全可以舉高隻手！</p>
+                    <p class="text-gray-300 mb-6 relative z-10">
+                        原本右手痛到著衫都困難，睇過西醫食止痛藥治標不治本。經朋友介紹嚟搵劉醫師推拿加針灸，做咗3次已經有好大改善，依家完全可以舉高隻手！</p>
                     <div class="flex items-center gap-3 relative z-10">
-                        <div class="w-10 h-10 rounded-full bg-tcm-primary flex items-center justify-center font-bold text-white border border-white/20">陳</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-tcm-primary flex items-center justify-center font-bold text-white border border-white/20">
+                            陳</div>
                         <div>
                             <p class="font-medium text-white">陳先生 (55歲)</p>
                             <p class="text-xs text-tcm-gold">治療項目：五十肩推拿針灸</p>
@@ -486,15 +584,20 @@
                 </div>
 
                 <!-- Review 2 -->
-                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 relative shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+                <div
+                    class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 relative shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
                     <i class="ph-fill ph-quotes text-5xl text-tcm-gold/30 absolute top-4 left-4"></i>
                     <div class="flex text-tcm-gold mb-4 relative z-10">
-                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
                     <h4 class="font-bold text-lg mb-2 relative z-10 text-white">「正骨手勢非常好，即時鬆晒」</h4>
-                    <p class="text-gray-300 mb-6 relative z-10">做IT經常坐姿唔好搞到腰骨痛，甚至痺落隻腳。醫師檢查好仔細，啪骨啪幾下嗰下聽到『卡』一聲，即刻覺得條腰鬆返，痛楚減咗八成，極力推薦！</p>
+                    <p class="text-gray-300 mb-6 relative z-10">
+                        做IT經常坐姿唔好搞到腰骨痛，甚至痺落隻腳。醫師檢查好仔細，啪骨啪幾下嗰下聽到『卡』一聲，即刻覺得條腰鬆返，痛楚減咗八成，極力推薦！</p>
                     <div class="flex items-center gap-3 relative z-10">
-                        <div class="w-10 h-10 rounded-full bg-tcm-primary flex items-center justify-center font-bold text-white border border-white/20">李</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-tcm-primary flex items-center justify-center font-bold text-white border border-white/20">
+                            李</div>
                         <div>
                             <p class="font-medium text-white">李小姐 (32歲)</p>
                             <p class="text-xs text-tcm-gold">治療項目：腰椎復位</p>
@@ -503,15 +606,20 @@
                 </div>
 
                 <!-- Review 3 -->
-                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 relative shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+                <div
+                    class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 relative shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
                     <i class="ph-fill ph-quotes text-5xl text-tcm-gold/30 absolute top-4 left-4"></i>
                     <div class="flex text-tcm-gold mb-4 relative z-10">
-                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
                     <h4 class="font-bold text-lg mb-2 relative z-10 text-white">「環境乾淨舒服，醫師好有耐性」</h4>
-                    <p class="text-gray-300 mb-6 relative z-10">一直有偏頭痛問題，嚟做頭部推拿同把脈開藥。診所環境好好，唔會有陣好濃烈嘅中藥味，好乾淨。醫師解釋病情好詳細，唔會拖症。</p>
+                    <p class="text-gray-300 mb-6 relative z-10">
+                        一直有偏頭痛問題，嚟做頭部推拿同把脈開藥。診所環境好好，唔會有陣好濃烈嘅中藥味，好乾淨。醫師解釋病情好詳細，唔會拖症。</p>
                     <div class="flex items-center gap-3 relative z-10">
-                        <div class="w-10 h-10 rounded-full bg-tcm-primary flex items-center justify-center font-bold text-white border border-white/20">W</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-tcm-primary flex items-center justify-center font-bold text-white border border-white/20">
+                            W</div>
                         <div>
                             <p class="font-medium text-white">Wong Tai (40歲)</p>
                             <p class="text-xs text-tcm-gold">治療項目：內科調理、推拿</p>
@@ -525,16 +633,20 @@
     <!-- Location & Contact -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-stone-50 rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-gray-100">
+            <div
+                class="bg-stone-50 rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-gray-100">
                 <!-- Map Placeholder -->
                 <div class="w-full lg:w-1/2 h-80 lg:h-auto relative">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.306018153549!2d114.16709427606788!3d22.32317184275038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400c7a524a8ab%3A0xe5fbdc195e2f3df!2s720%20Nathan%20Rd%2C%20Mong%20Kok%2C%20Hong%20Kong!5e0!3m2!1sen!2ssg!4v1714000000000!5m2!1sen!2ssg" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.306018153549!2d114.16709427606788!3d22.32317184275038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400c7a524a8ab%3A0xe5fbdc195e2f3df!2s720%20Nathan%20Rd%2C%20Mong%20Kok%2C%20Hong%20Kong!5e0!3m2!1sen!2ssg!4v1714000000000!5m2!1sen!2ssg"
+                        width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <!-- Contact Info -->
                 <div class="w-full lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
                     <h2 class="font-serif text-3xl font-bold text-tcm-dark mb-8">預約及聯絡方式</h2>
-                    
+
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
                             <div class="bg-tcm-light p-3 rounded-full text-tcm-primary shrink-0">
@@ -543,7 +655,8 @@
                             <div>
                                 <h4 class="font-bold text-gray-800 mb-1">診所地址</h4>
                                 <p class="text-gray-600">香港九龍旺角彌敦道 720 號<br>家樂樓 1 樓 102 室</p>
-                                <p class="text-sm text-tcm-gold mt-1 font-medium"><i class="ph-bold ph-train"></i> 港鐵旺角站 B1 出口步行 2 分鐘直達，大廈設有電梯</p>
+                                <p class="text-sm text-tcm-gold mt-1 font-medium"><i class="ph-bold ph-train"></i> 港鐵旺角站
+                                    B1 出口步行 2 分鐘直達，大廈設有電梯</p>
                             </div>
                         </div>
 
@@ -570,9 +683,11 @@
                     </div>
 
                     <div class="mt-10 flex gap-4">
-                        <a href="https://wa.me/85296680071" class="flex-1 gold-breath-btn bg-gradient-to-r from-tcm-gold to-[#e5c05c] text-tcm-dark text-center py-4 rounded-xl font-bold text-lg transition flex items-center justify-center gap-2 overflow-hidden relative group/btn">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></span>
-                            <i class="ph-fill ph-whatsapp-logo text-2xl relative z-10"></i> 
+                        <a href="https://wa.me/85296680071"
+                            class="flex-1 gold-breath-btn bg-gradient-to-r from-tcm-gold to-[#e5c05c] text-tcm-dark text-center py-4 rounded-xl font-bold text-lg transition flex items-center justify-center gap-2 overflow-hidden relative group/btn">
+                            <span
+                                class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></span>
+                            <i class="ph-fill ph-whatsapp-logo text-2xl relative z-10"></i>
                             <span class="relative z-10">立即 WhatsApp 預約</span>
                         </a>
                     </div>
@@ -588,10 +703,10 @@
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center gap-3 mb-6">
                         <svg width="30" height="30" viewBox="0 0 100 100" class="text-tcm-gold">
-                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="4"/>
-                            <path d="M30 50 Q50 20 70 50 T30 50" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <path d="M50 20 L50 80" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="4" />
+                            <path d="M30 50 Q50 20 70 50 T30 50" fill="none" stroke="currentColor" stroke-width="3" />
+                            <path d="M50 20 L50 80" fill="none" stroke="currentColor" stroke-width="3" />
+                            <circle cx="50" cy="50" r="8" fill="currentColor" />
                         </svg>
                         <h3 class="font-serif text-2xl font-bold tracking-wider">劉志明中醫推拿診所</h3>
                     </div>
@@ -599,12 +714,13 @@
                         專業註冊中醫團隊，為您提供推拿、正骨、針灸及內科調理服務。從根源解決痛症，助您重拾健康生活。
                     </p>
                     <div class="flex gap-4">
-                        <a href="https://www.facebook.com/LCMCMC/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-tcm-primary hover:text-white transition text-xl">
+                        <a href="https://www.facebook.com/LCMCMC/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-tcm-primary hover:text-white transition text-xl">
                             <i class="ph-fill ph-facebook-logo"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="font-bold text-lg mb-6 text-tcm-gold">快速連結</h4>
                     <ul class="space-y-3">
@@ -618,7 +734,7 @@
                 <div>
                     <h4 class="font-bold text-lg mb-6 text-tcm-gold">服務項目</h4>
                     <ul class="space-y-3 text-gray-400">
-                        <li>深層推拿按摩</li>
+                        <li>深層推拿理療</li>
                         <li>脊椎關節正骨復位</li>
                         <li>痛症針灸/拔罐</li>
                         <li>中醫內科調理</li>
@@ -626,7 +742,8 @@
                 </div>
             </div>
 
-            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                 <p>&copy; 2024-2026 劉志明中醫推拿診所 LCM Chinese Medicine Clinic. 版權所有.</p>
                 <div class="mt-4 md:mt-0 space-x-4">
                     <a href="#" class="hover:text-white transition">私隱政策</a>
@@ -637,11 +754,13 @@
     </footer>
 
     <!-- Floating Golden WhatsApp Button (Removed Red completely) -->
-    <a href="https://wa.me/85296680071" target="_blank" class="fixed bottom-6 right-6 z-50 gold-breath-btn bg-gradient-to-br from-tcm-gold to-[#b38e24] text-[#0a192f] w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group overflow-hidden">
+    <a href="https://wa.me/85296680071" target="_blank"
+        class="fixed bottom-6 right-6 z-50 gold-breath-btn bg-gradient-to-br from-tcm-gold to-[#b38e24] text-[#0a192f] w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group overflow-hidden">
         <!-- Shine effect -->
-        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+        <span
+            class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
         <i class="ph-fill ph-whatsapp-logo text-4xl relative z-10"></i>
-        
+
         <!-- Notification Dot (Ice Blue / Gold border) -->
         <span class="absolute top-0 right-0 flex h-4 w-4 z-20">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tcm-light opacity-80"></span>
@@ -666,7 +785,7 @@
         // Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
-        
+
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
@@ -680,4 +799,5 @@
         });
     </script>
 </body>
+
 </html>
